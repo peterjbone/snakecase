@@ -1,1 +1,1 @@
-# CaseCobra 🐍
+# Snake Case 🐍

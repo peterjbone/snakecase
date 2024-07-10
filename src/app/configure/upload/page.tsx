@@ -28,6 +28,7 @@ const Page = () => {
 		}
 	});
 
+	//? FOR DROP IMAGE REJECTED
 	const onDropRejected = (rejectedFiles: FileRejection[]) => {
 		const [file] = rejectedFiles;
 
@@ -40,6 +41,7 @@ const Page = () => {
 		});
 	};
 
+	//? FOR DROP IMAGE ACCEPTED
 	const onDropAccepted = (acceptedFiles: File[]) => {
 		startUpload(acceptedFiles, { configId: undefined });
 

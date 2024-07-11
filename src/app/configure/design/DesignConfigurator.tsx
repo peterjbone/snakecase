@@ -97,6 +97,7 @@ const DesignConfigurator = ({
 				height
 			} = phoneCaseRef.current!.getBoundingClientRect();
 
+			//? Para las coordenadas y los limites del telefono
 			const { left: containerLeft, top: containerTop } =
 				containerRef.current!.getBoundingClientRect();
 
@@ -106,16 +107,18 @@ const DesignConfigurator = ({
 			const actualX = renderedPosition.x - leftOffset;
 			const actualY = renderedPosition.y - topOffset;
 
+			//? Creando el LIENZO
 			const canvas = document.createElement("canvas");
 			canvas.width = width;
 			canvas.height = height;
-			const ctx = canvas.getContext("2d");
+			const ctx = canvas.getContext("2d"); //? para modificar el lienzo
 
 			const userImage = new Image();
 			userImage.crossOrigin = "anonymous";
 			userImage.src = imageUrl;
 			await new Promise((resolve) => (userImage.onload = resolve));
 
+			//? Coordinando la imagen, el lienzo y el telefono
 			ctx?.drawImage(
 				userImage,
 				actualX,
@@ -125,7 +128,7 @@ const DesignConfigurator = ({
 			);
 
 			const base64 = canvas.toDataURL();
-			const base64Data = base64.split(",")[1];
+			const base64Data = base64.split(",")[1]; //? para coger la secuencia de datos que me sirve
 
 			const blob = base64ToBlob(base64Data, "image/png");
 			const file = new File([blob], "filename.png", { type: "image/png" });

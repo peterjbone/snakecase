@@ -384,9 +384,7 @@ const DesignConfigurator = ({
 								)}
 							</p>
 							<Button
-								isLoading={isPending}
 								disabled={isPending}
-								loadingText="Saving"
 								onClick={() =>
 									saveConfig({
 										configId,
@@ -398,8 +396,8 @@ const DesignConfigurator = ({
 								}
 								size="sm"
 								className="w-full">
-								Continue
-								<ArrowRight className="h-4 w-4 ml-1.5 inline" />
+								{isPending ? "Saving" : "Continue"}
+								{!isPending && <ArrowRight className="h-4 w-4 ml-1.5 inline" />}
 							</Button>
 						</div>
 					</div>

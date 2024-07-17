@@ -18,6 +18,7 @@ const ThankYou = () => {
 		retryDelay: 500
 	});
 
+	//? for the loading
 	if (data === undefined) {
 		return (
 			<div className="w-full mt-24 flex justify-center">
@@ -30,6 +31,7 @@ const ThankYou = () => {
 		);
 	}
 
+	//? while verifying the payment (for stripe)
 	if (data === false) {
 		return (
 			<div className="w-full mt-24 flex justify-center">
@@ -45,6 +47,7 @@ const ThankYou = () => {
 	const { configuration, billingAddress, shippingAddress, amount } = data;
 	const { color } = configuration;
 
+	//? WHEN THE PAYMENT WAS A SUCCESS
 	return (
 		<div className="bg-white">
 			<div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">

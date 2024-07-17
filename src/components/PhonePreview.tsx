@@ -25,6 +25,7 @@ const PhonePreview = ({
 		setRenderedDimensions({ width, height });
 	};
 
+	//? to resize and render the image on the phone
 	useEffect(() => {
 		handleResize();
 

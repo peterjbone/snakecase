@@ -65,7 +65,6 @@ const ThankYou = () => {
 						<p className="mt-2 text-zinc-500">{orderId}</p>
 					</div>
 				</div>
-
 				<div className="mt-10 border-t border-zinc-200">
 					<div className="mt-10 flex flex-auto flex-col">
 						<h4 className="font-semibold text-zinc-900">
@@ -79,14 +78,14 @@ const ThankYou = () => {
 						</p>
 					</div>
 				</div>
-
+				//* PHONE PREVIEW
 				<div className="flex space-x-6 overflow-hidden mt-4 rounded-xl bg-gray-900/5 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl">
 					<PhonePreview
 						croppedImageUrl={configuration.croppedImageUrl!}
 						color={color!}
 					/>
 				</div>
-
+				//* SHIPPING AND BILLING INFO
 				<div>
 					<div className="grid grid-cols-2 gap-x-6 py-10 text-sm">
 						<div>
@@ -129,7 +128,6 @@ const ThankYou = () => {
 						</div>
 					</div>
 				</div>
-
 				<div className="space-y-6 border-t border-zinc-200 pt-10 text-sm">
 					<div className="flex justify-between">
 						<p className="font-medium text-zinc-900">Subtotal</p>

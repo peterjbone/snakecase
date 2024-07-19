@@ -22,7 +22,15 @@ A Modern E-Commerce-Store for Custom Phone Cases (Drag & Drop)
 
 ### Login
 
-![gif](./public/readme/login.gif)
+![login](./public/readme/login.gif)
+
+### Landing page
+
+![landing page](./public/readme/all-landing.gif)
+
+### Custom Phone case configurator
+
+![Custom Phone case configurator](./public/readme/customize-phone.gif)
 
 ## Installation
 

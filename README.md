@@ -32,6 +32,10 @@ A Modern E-Commerce-Store for Custom Phone Cases (Drag & Drop)
 
 ![Custom Phone case configurator](./public/readme/customize-phone.gif)
 
+### Purchase with stripe
+
+![Purchase with stripe](./public/readme/customize-phone.gif)
+
 ## Installation
 
 Clone the project

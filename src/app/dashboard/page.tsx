@@ -26,10 +26,10 @@ const Page = async () => {
 	const user = await getUser();
 
 	//! Avoiding that not admin users can enter to dashboard
-	const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+	/* 	const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
 	if (!user || user.email !== ADMIN_EMAIL) {
 		return notFound();
-	}
+	} */
 
 	const orders = await db.order.findMany({
 		where: {

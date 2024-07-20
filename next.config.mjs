@@ -7,7 +7,7 @@ const nextConfig = {
 		return [
 			{
 				// Matching all API routes under /src/app/api/auth
-				source: "/api/auth/:path*",
+				source: "/src/app/api/auth/[kindeAuth]/route.js",
 				headers: [
 					{ key: "Access-Control-Allow-Credentials", value: "true" },
 					{

@@ -98,12 +98,12 @@ export default function Home() {
 							<img
 								className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block"
 								src="/your-image.png"
-								alt=""
+								alt="image"
 							/>
 							<img
 								className="absolute w-20 -left-6 -bottom-6 select-none"
-								src="/line.pmg"
-								alt=""
+								src="/line.png"
+								alt="image"
 							/>
 							<Phone className="w-64" imgSrc="/testimonials/1.jpg" />
 						</div>

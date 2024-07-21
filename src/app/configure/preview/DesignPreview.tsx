@@ -15,6 +15,7 @@ import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import LoginModal from "@/components/LoginModal";
+import { log } from "console";
 
 const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
 	const router = useRouter();
@@ -59,6 +60,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
 	});
 
 	const handleCheckout = () => {
+		console.log(user);
 		if (user) {
 			// create payment session
 			createPaymentSession({ configId: id });

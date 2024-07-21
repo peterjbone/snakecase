@@ -15,13 +15,14 @@ import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import LoginModal from "@/components/LoginModal";
-import { log } from "console";
 
 const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
 	const router = useRouter();
 	const { toast } = useToast();
 	const { id } = configuration;
 	const { user } = useKindeBrowserClient();
+	//console.log(user);
+	//console.log(user.email);
 	const [isLoginModalOpen, setIsLoginModalOpen] = useState<boolean>(false);
 
 	const [showConfetti, setShowConfetti] = useState<boolean>(false);
@@ -59,9 +60,9 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
 		}
 	});
 
+	//* Checkout with stripe
 	const handleCheckout = () => {
-		console.log(user);
-		if (user) {
+		if (user?.email) {
 			// create payment session
 			createPaymentSession({ configId: id });
 		} else {

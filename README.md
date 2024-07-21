@@ -34,6 +34,8 @@ A Modern E-Commerce-Store for Custom Phone Cases (Drag & Drop)
 
 ### Purchase with stripe
 
+### Admin Dashboard
+
 ## Installation
 
 Clone the project

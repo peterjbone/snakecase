@@ -15,7 +15,7 @@ const Navbar = async () => {
       bg-white/75 backdrop-blur-lg transition-all">
 			<MaxWidthWrapper>
 				<div className="flex h-14 items-center justify-between border-b border-zinc-200">
-					<Link href="" className="flex z-40 font-semibold">
+					<Link href="/" className="flex z-40 font-semibold">
 						Snake <span className="text-green-600">Case</span>
 					</Link>
 

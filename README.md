@@ -34,7 +34,11 @@ A Modern E-Commerce-Store for Custom Phone Cases (Drag & Drop)
 
 ### Purchase with stripe
 
+![checkout stripe](./public/readme/checkout-stripe.gif)
+
 ### Admin Dashboard
+
+![Admin dashboard](./public/readme/dashboard.gif)
 
 ## Installation
 
